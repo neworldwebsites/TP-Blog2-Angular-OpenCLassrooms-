@@ -1,0 +1,31 @@
+<li [ngClass]="{
+	'list-group-item': true,
+  'list-group-item-success': postloveIts >=50,
+  'list-group-item-danger': postloveIts <50
+}">
+
+  <!-- <div style="width:20px;height:20px;background:red" *ngIf=" loveIts >= 50 "></div> -->
+
+  <h4 [ngStyle]="{color:getColor()}">Titre : {{ postTitle }}
+
+    <small id="datestyle" class="float-right">
+      {{ postcreatedAt | date : 'short' }}
+    </small>
+
+  </h4>
+
+  <p class="p-3">{{ postContent }}</p>
+
+  <p  class="badge badge-secondary">😍 : {{ postloveIts }}</p>
+
+  <p class="text-center">
+    <input (click)="unlike()"
+    type="button" value="☹️ moins" class="btn  btn-danger">
+
+    <input (click)="like()"
+     type="button" value="😍 plus+" class="btn  btn-info">
+  </p>
+
+</li>
+
+
