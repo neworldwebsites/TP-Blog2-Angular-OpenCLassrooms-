@@ -25,9 +25,6 @@ export class PostListComponent implements OnInit, OnDestroy {
     this.postService.emmitPostSubject();
   }
 
-// voir ligne30 post.servive:
-                  // emmitPostSubject() {
-                  //   this.postsSubject.next(this.posts.slice());
 
   ngOnDestroy() {
     this.postSubscription.unsubscribe();
