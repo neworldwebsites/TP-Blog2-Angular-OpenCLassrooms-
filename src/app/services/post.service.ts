@@ -24,7 +24,7 @@ export class PostService {
       loveIt: 6,
       postcreatedAt: new Date()
     }
-  ]
+  ];
 
 
   emmitPostSubject() {
