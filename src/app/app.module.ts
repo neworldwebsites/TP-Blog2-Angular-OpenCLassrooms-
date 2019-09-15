@@ -4,7 +4,6 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { RouterModule, Routes } from '@angular/router'
 import { AppComponent } from './app.component';
-import { PostsComponent } from './posts/posts.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { PostService } from './services/post.service';
 import { NewPostComponent } from './new-post/new-post.component';
