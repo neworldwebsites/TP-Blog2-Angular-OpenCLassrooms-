@@ -1,8 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
 import { AppRoutingModule } from './app-routing.module';
-import { RouterModule, Routes } from '@angular/router'
+import { RouterModule, Routes } from '@angular/router';
 import { AppComponent } from './app.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { PostService } from './services/post.service';
@@ -16,7 +15,7 @@ const appRoutes: Routes = [
   { path: 'new', component: NewPostComponent },
   { path: '', component: PostListComponent },
   { path: '**', redirectTo: 'posts' }
-]
+];
 
 
 @NgModule({
@@ -39,4 +38,7 @@ const appRoutes: Routes = [
   ],
   bootstrap: [AppComponent]
 })
+
 export class AppModule { }
+
+
