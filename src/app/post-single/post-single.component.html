@@ -9,7 +9,9 @@
 	<h4>
 		{{ post.title }}
 			<small id="datestyle" class="float-right">
-				{{ postcreatedAt | date : 'short' }}
+				<i>
+					{{ post.postcreatedAt | date : 'short' }}
+				</i>
 			</small>
 	</h4>
 
