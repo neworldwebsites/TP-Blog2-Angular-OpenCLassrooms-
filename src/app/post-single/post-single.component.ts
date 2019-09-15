@@ -3,13 +3,13 @@ import { PostService } from '../services/post.service';
 import { Post } from '../models/post.model';
 
 @Component({
-  selector: 'app-post-list-item',
-  templateUrl: './post-list-item.component.html',
-  styleUrls: ['./post-list-item.component.scss']
+  selector: 'app-post-single',
+  templateUrl: './post-single.component.html',
+  styleUrls: ['./post-single.component.scss']
 })
 
 
-export class PostListItemComponent implements OnInit {
+export class PostSingleComponent implements OnInit {
   @Input() post: Post;
 
 

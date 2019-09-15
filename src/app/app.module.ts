@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { PostService } from './services/post.service';
 import { NewPostComponent } from './new-post/new-post.component';
-import { PostListItemComponent } from './post-list-item/post-list-item.component';
+import { PostSingleComponent } from './post-single/post-single.component';
 import { PostListComponent } from './post-list/post-list.component';
 
 
@@ -23,7 +23,7 @@ const appRoutes: Routes = [
     AppComponent,
     // PostsComponent,
     NewPostComponent,
-    PostListItemComponent,
+    PostSingleComponent,
     PostListComponent
   ],
   imports: [
