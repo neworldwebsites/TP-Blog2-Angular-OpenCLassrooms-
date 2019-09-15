@@ -8,24 +8,41 @@
 
 <h2 class="m-5">Liste des Posts :</h2>
 
+
+<nav class="navbar navbar-expand-sm navbar-light  mb-2 bg-light justify-content-center">
+  <div class="container-fluid">
+
+    <div class="navbar-header">
+      <a class="navbar-brand"
+      routerLink="">
+        Accueil</a>
+    </div>
+
+    <ul class="nav navbar-nav">
+
+      <li routerLinkActive="active">
+        <a routerLink="posts">
+          ALL</a>
+      </li>
+
+      <li routerLinkActive="active">
+        <a routerLink="new">
+          NEW</a>
+      </li>
+
+    </ul>
+  </div>
+</nav>
+
+
+
 <div class="container">
   <div class="row">
     <div class="col-lg-12 col-xs-12">
-
-      <ul class="list-group">
-
-        <app-posts *ngFor="let post of posts"
-        [postTitle]="post.title"
-        [postContent]="post.content"
-        [postloveIts]="post.loveIts"
-        [postcreatedAt]="post.createdAt"
-        ></app-posts>
-
-      </ul>
-
+      <router-outlet></router-outlet> 
     </div>
   </div>
 </div>
 
 
-<router-outlet></router-outlet>
+

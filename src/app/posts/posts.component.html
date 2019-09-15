@@ -6,7 +6,9 @@
 
   <!-- <div style="width:20px;height:20px;background:red" *ngIf=" loveIts >= 50 "></div> -->
 
-  <h4 [ngStyle]="{color:getColor()}">Titre : {{ postTitle }}
+  <h4 
+  [ngStyle]="{color:getColor()}">
+  Titre : {{ postTitle }}
 
     <small id="datestyle" class="float-right">
       {{ postcreatedAt | date : 'short' }}
@@ -20,7 +22,7 @@
 
   <p class="text-center">
     <input (click)="unlike()"
-    type="button" value="☹️ moins" class="btn  btn-danger">
+    type="button" value="☹️ moins" class="btn  btn-danger mr-1">
 
     <input (click)="like()"
      type="button" value="😍 plus+" class="btn  btn-info">

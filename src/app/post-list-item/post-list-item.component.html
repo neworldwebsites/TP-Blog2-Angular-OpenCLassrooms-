@@ -1,0 +1,65 @@
+<li class="mb-1"
+[ngClass]="{
+	'list-group-item': true,
+  'list-group-item-success': post.loveIt >=5,
+  'list-group-item-danger': post.loveIt <5
+}">
+
+	<!-- <h4 [ngStyle]="{color:getColor()}"> -->
+	<h4>
+		{{ post.title }}
+			<small id="datestyle" class="float-right">
+				{{ postcreatedAt | date : 'short' }}
+			</small>
+	</h4>
+
+
+	<span class="pull-right">
+	 {{ post.created_at | date: 'short' }}</span>
+
+	<p class="p-3">{{ post.content }}</p>
+
+	<p class="badge badge-secondary">😍 : {{ post.loveIt }}</p>
+
+  <p class="text-center">
+
+		<input class="btn  btn-danger mr-1"
+		(click)="onDoNotLoveIt(post)"
+		type="button" 
+		value="☹️ moins" >
+
+		<input class="btn  btn-info mr-1"
+		(click)="onLoveIt(post)"
+		type="button" 
+		value="😍 plus+">
+
+		<input class="pull-right btn btn-secondary"
+		style="cursor:pointer"
+		type="button" 
+		name="remove" 
+		(click)="onDelete(post)"
+		value="🗑️ Post">		
+
+  </p>
+	
+
+
+	
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
